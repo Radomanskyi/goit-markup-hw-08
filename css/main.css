@@ -354,6 +354,11 @@ textarea {
   background-origin: border-box;
 }
 
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .benefits__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -449,6 +454,11 @@ textarea {
 .team__title--margin {
   margin-bottom: 50px;
 }
+.team--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .team__title-name {
   font-weight: 500;
   font-size: 16px;
@@ -456,6 +466,7 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--main-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 .team__text {
   font-weight: 400;
@@ -463,6 +474,7 @@ textarea {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  text-align: center;
   margin-bottom: 16px;
 }
 .team__name--padding {
@@ -477,6 +489,9 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 16px;
   list-style: none;
 }
@@ -517,6 +532,7 @@ textarea {
   font-size: 36px;
   line-height: 1.17;
   color: var(--main-color);
+  text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   padding-top: 94px;
@@ -552,9 +568,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 15px calc((100% - 30px) / 2);
 }
 .clients__item:not(:last-child) {
   margin-right: 30px;
@@ -833,13 +846,16 @@ textarea {
           align-items: center;
 }
 .navigation__list {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
-@media (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .navigation__list {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .navigation__item {
@@ -871,9 +887,14 @@ textarea {
   color: var(--accent);
 }
 
-@media (max-width: 480px) {
+.contact-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
   .contact-list {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .contact-list__item {
@@ -1039,9 +1060,23 @@ textarea {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }/*# sourceMappingURL=main.css.map */

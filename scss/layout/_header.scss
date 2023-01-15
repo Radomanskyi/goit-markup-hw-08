@@ -12,9 +12,12 @@
     display: flex;
     align-items: center;
     &__list {
-    @media (max-width: 480px) {
-    display: none;}
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+    }
     }
 
     &__item {
@@ -47,8 +50,12 @@
 }
 
 .contact-list {
-    @media (max-width: 480px) {
-        display: none;}
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+    
     &__item {
     margin-right: 50px;
     padding-top: 32px;
