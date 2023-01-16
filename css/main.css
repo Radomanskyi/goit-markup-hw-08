@@ -895,30 +895,67 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
-.contact-list__item {
-  margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-list__item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__item {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
 }
 .contact-list__item:last-child {
   margin-right: 0;
 }
-.contact-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .contact-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .contact-list__icon {
   fill: currentColor;
@@ -931,6 +968,12 @@ textarea {
 
 .contact-list__icon:hover, .contact-list__icon:focus {
   fill: var(--accent);
+}
+
+@media screen and (min-width: 768px) {
+  .button-burger {
+    display: none;
+  }
 }
 
 .footer {
