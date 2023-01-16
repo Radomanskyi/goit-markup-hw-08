@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    max-width: 1600px;
+    max-width: 480px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -15,12 +15,35 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),                  
-        url("../images/hero.jpg");
+        url("/images/hero-480-img.jpg");
+
+        @media screen and (min-resolution 2dppx) {
+                background-image: url("/images/hero-480-img@2x.jpg");
+        }
+        
+        @media screen and (min-width:$tablet) {
+                background-image: url("/images/hero-768-img.jpg");
+                max-width: 768px;
+        }
+
+        @media screen and (min-resolution 2dppx) {
+            background-image: url("/images/hero-768-img@2x.jpg");
+        }
+
+        @media screen and (min-width:$desktop) {
+            background-image: url("/images/hero-1200-img.jpg");
+            max-width: 768px;
+    }
+
+        @media screen and (min-resolution 2dppx) {
+            background-image: url("/images/hero-1200-img@2x.jpg");
+        }
+
 
         &__title {
             font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
+            font-size: 26px;
+            line-height: 1.62;
             text-align: center;
             letter-spacing: 0.06em;
             text-transform: uppercase;
@@ -29,6 +52,11 @@
             margin-left: auto;
             margin-right: auto;
             width: 696px;
+
+            @media screen and (min-width:$desktop) {
+            font-size: 44px;
+            line-height: 1.36;
+            }
         }
 }
 
