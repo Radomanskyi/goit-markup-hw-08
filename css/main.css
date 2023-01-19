@@ -201,12 +201,21 @@ textarea {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
   }
 }
 
@@ -390,11 +399,6 @@ textarea {
   background-origin: border-box;
 }
 
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .benefits__item:not(:last-child) {
   margin-right: 30px;
 }
