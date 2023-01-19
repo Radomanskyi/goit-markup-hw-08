@@ -150,6 +150,10 @@ textarea {
           align-items: baseline;
 }
 
+.img-team {
+  width: 450px;
+}
+
 /*Components*/
 .hero {
   background-color: var(--additional-background);
@@ -547,12 +551,12 @@ textarea {
   fill: currentColor;
 }
 .team__title--margin {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-.team--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .team__title--margin {
+    margin-bottom: 50px;
+  }
 }
 .team__title-name {
   font-weight: 500;
@@ -617,10 +621,6 @@ textarea {
 .team__employee {
   background-color: var(--white);
 }
-.team__employee--margin:not(:last-child) {
-  margin-right: 30px;
-}
-
 .clients__title {
   font-style: normal;
   font-weight: 700;
