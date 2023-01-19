@@ -150,10 +150,6 @@ textarea {
           align-items: baseline;
 }
 
-.img-team {
-  width: 450px;
-}
-
 /*Components*/
 .hero {
   background-color: var(--additional-background);
