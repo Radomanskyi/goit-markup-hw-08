@@ -1004,6 +1004,33 @@ textarea {
   cursor: pointer;
 }
 
+.button-burger {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .button-burger {
+    display: none;
+  }
+}
+
+.button-burger .icon-close {
+  display: none;
+}
+
+.button-burger.is-open .icon-close {
+  display: block;
+}
+
+.button-burger.is-open .icon-menu {
+  display: none;
+}
+
 /*Layout*/
 .header {
   background-color: var(--white);
@@ -1152,12 +1179,6 @@ textarea {
 
 .contact-list__icon:hover, .contact-list__icon:focus {
   fill: var(--accent);
-}
-
-@media screen and (min-width: 768px) {
-  .button-burger {
-    display: none;
-  }
 }
 
 .footer {

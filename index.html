@@ -36,11 +36,16 @@
                             <use href="./images/symbol-defs.svg#icon-phone"></use>
                         </svg> +38 096 111 11 11</a></li>
                 </ul>
-                <button class="button-burger" type="button">
-                    <svg width="40" height="40">
-                        <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                <button class="button-burger is-open" type="button" aria-expanded="false" js-menu-container>
+                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                        <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use> 
                     </svg>
                 </button>
+
+                <div class="menu-container">
+
+                </div>
         </div>
     </header>
 
@@ -464,5 +469,6 @@
 </footer>
 
 <script src="./js/modal.js"></script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

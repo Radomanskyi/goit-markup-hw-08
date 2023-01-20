@@ -121,3 +121,27 @@
     border-color: var(--accent);
     cursor: pointer;
 }
+
+.button-burger {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+    @media screen and (min-width:$tablet) {
+        display: none;
+    }
+}
+
+.button-burger .icon-close {
+    display: none;
+}
+
+.button-burger.is-open .icon-close {
+    display: block;
+}
+
+.button-burger.is-open .icon-menu {
+    display: none;
+}
