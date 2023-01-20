@@ -447,7 +447,7 @@ textarea {
   margin-bottom: 30px;
 }
 .benefits__title-text {
-  width: 270px;
+  width: 450px;
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -617,6 +617,20 @@ textarea {
 .team__employee {
   background-color: var(--white);
 }
+.team__img {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+  }
+}
+
 .clients__title {
   font-style: normal;
   font-weight: 700;

@@ -78,4 +78,16 @@
     &__employee--margin:not(:last-child) {
         // margin-right: 30px;
     }
+
+    &__img {
+        width: 450px;
+
+        @media screen and (min-width: $tablet) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
+    }
 }
