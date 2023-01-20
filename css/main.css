@@ -554,6 +554,22 @@ textarea {
     margin-bottom: 50px;
   }
 }
+@media screen and (min-width: 768px) {
+  .team--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team--flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .team__title-name {
   font-weight: 500;
   font-size: 16px;
@@ -616,6 +632,23 @@ textarea {
 }
 .team__employee {
   background-color: var(--white);
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team__employee {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__employee {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team__employee--margin:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 .team__img {
   width: 450px;
