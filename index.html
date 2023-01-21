@@ -36,10 +36,9 @@
                         <use href="./images/symbol-defs.svg#icon-phone"></use>
                     </svg> +38 096 111 11 11</a></li>
             </ul>
-            <button class="button-burger js-open-menu" type="button" aria-expanded="false" aria-controls="menu-container">
+            <button class="button-burger is-open js-open-menu" type="button" aria-expanded="false" aria-controls="menu-container">
                 <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                     <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
-                    <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use> 
                 </svg>
             </button>
             <div class="menu-container js-menu-container" id="menu-container" is-open js-menu-container>
@@ -52,12 +51,17 @@
                     <li class="contact-list__item"><a href="tel:+380961111111" class="contact-list__link-phone link">+38 096 111 11 11</a></li>
                     <li class="contact-list__item"><a href="mailto:info@devstudio.com" class="contact-list__link link">info@devstudio.com</a></li>
                 </ul>
-                <ul>
-                    <li><a href="Instagram"></a></li>
-                    <li><a href="Twitter"></a></li>
-                    <li><a href="Facebook"></a></li>
-                    <li><a href="LinkedIn"></a></li>
+                <ul class="social-networks-list list">
+                    <li class="social-networks-list__item"><a href="" class="social-networks-list__link link">Instagram</a></li>
+                    <li class="social-networks-list__item"><a href="" class="social-networks-list__link link">Twitter</a></li>
+                    <li class="social-networks-list__item"><a href="" class="social-networks-list__link link">Facebook</a></li>
+                    <li class="social-networks-list__item"><a href="" class="social-networks-list__link link">LinkedIn</a></li>
                 </ul>
+                <button class="button-burger button-burger--position is-open js-close-menu" type="button">
+                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                        <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use> 
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
