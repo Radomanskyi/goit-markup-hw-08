@@ -274,6 +274,11 @@ textarea {
   border-radius: 4px;
   padding: 40px;
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+  }
+}
 .modal__form {
   width: 100%;
 }
@@ -362,6 +367,12 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+@media screen and (max-width: 767px) {
+  .modal__checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .modal__comment {
   font-weight: 400;
