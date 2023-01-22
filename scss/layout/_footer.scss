@@ -78,7 +78,11 @@
     margin-bottom: 20px;
     color: var(--white);
     }
-    text-align: left;
+    text-align: center;
+
+    @media screen and(min-width: $desktop) {
+        text-align: left;
+    }
     &__link {
     width: 44px;
     height: 44px;

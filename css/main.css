@@ -1419,7 +1419,7 @@ textarea {
 }
 
 .social-media {
-  text-align: left;
+  text-align: center;
 }
 .social-media__item {
   display: -webkit-inline-box;
@@ -1437,6 +1437,11 @@ textarea {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--white);
+}
+@media screen and (min-width: 1200px) {
+  .social-media {
+    text-align: left;
+  }
 }
 .social-media__link {
   width: 44px;
