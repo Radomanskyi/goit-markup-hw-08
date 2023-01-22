@@ -97,6 +97,12 @@
         margin-bottom: 0;
        }
        }
+
+       &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 32px;
+        }
+       }
     }
     &__link {
 
@@ -180,6 +186,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &.is-open {
 transform: translateX(0);
 }
+z-index: 1;
 }
 
 .social-networks-list {
