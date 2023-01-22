@@ -8,7 +8,11 @@
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 30px;
-        padding-top: 60px;
+
+        @media screen and (max-width: 1199px) {
+            font-size: 28px;
+            line-height: 1.18;
+        }
     }
     
     &__link {
@@ -43,12 +47,9 @@
     }
     
     &__list {
-        margin-bottom: 60px;
         display: flex;
         flex-wrap: wrap;
-        @media screen and (min-width: $tablet) {
-            
-        }
+        margin: -15px;
         @media screen and (min-width: $desktop) {
             flex-wrap: nowrap;
         }

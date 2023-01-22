@@ -120,6 +120,10 @@
     border-radius: 4px;
     border-color: var(--accent);
     cursor: pointer;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
 }
 
 .button-burger {

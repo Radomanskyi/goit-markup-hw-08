@@ -1,7 +1,5 @@
 .footer {
     background-color: var(--additional-background);
-    padding-top: 60px;
-    padding-bottom: 60px;
     &-logo {
     display: block;
     font-family: 'Raleway', sans-serif;
@@ -11,6 +9,7 @@
     letter-spacing: 0.03em;
     color: var(--white);
     margin-bottom: 28px;
+    margin-top: 60px;
     }
 }
 
@@ -55,7 +54,11 @@
     }
 }
 
-
+.contact-info__item:last-child {
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 60px;
+    }
+}
 
 .contact-info__communications-link:hover, .contact-info__communications-link:focus {
     color: var(--accent);
@@ -75,7 +78,7 @@
     margin-bottom: 20px;
     color: var(--white);
     }
-    text-align: center;
+    text-align: left;
     &__link {
     width: 44px;
     height: 44px;
@@ -147,4 +150,8 @@
     &__icon {
     margin-left: 10px;
     }
+}
+
+.icon {
+    fill: var(--white);
 }

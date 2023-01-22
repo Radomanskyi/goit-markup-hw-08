@@ -4,6 +4,22 @@
     &__icon, .icon {
         fill: currentColor;
     }
+
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-color);
+
+        @media screen and (max-width: 1199px) {
+            font-size: 28px;
+            line-height: 1.18;
+        }
+    }
     
     &__title--margin {
         margin-bottom: 30px;
@@ -78,12 +94,12 @@
         background-color: var(--accent);
         color: var(--white);
     }
-    }
     
     &__employee {
         background-color: var(--white);
-        width: 450px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
         
         @media screen and (min-width: $tablet) {
             width: calc((100% - 2 * 30px) / 2);
@@ -93,6 +109,7 @@
         @media screen and (min-width: $desktop) {
             width: 270px;
         }
+    }
 
     &__employee--margin:not(:last-child) {
         @media screen and (max-width: 767px) {
@@ -102,7 +119,7 @@
     }
 
     &__img {
-        width: 450px;
+        max-width: 100%;
 
         @media screen and (min-width: $tablet) {
             width: 354px;
